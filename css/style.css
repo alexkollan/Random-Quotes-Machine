@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Sintony');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.test {
+    border: 1px solid black;
+}
+
+body {
+    color: #f5f5f5;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #334431 0%, #334431 50%, #334431 50%, #ff533d 50%, #ff533d 100%);
+    /* W3C */
+}
+
+button:hover {}
+
+.title {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 4em;
+}
+
+.quotes {
+    margin-top: 0vh;
+    padding: 50px;
+}
+
+.categ {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    margin-top: 60px;
+}
+
+.quote {
+    font-family: 'EB Garamond', serif;
+    font-size: 4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* height: 60vh; */
+    line-height: 1.45;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.4em;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+.about {
+    margin-top: 10vh;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.genbtn,
+#tweet,
+#gotowiki {
+    background: rgba(0, 0, 0, 0);
+    border: 3px solid #f5f5f5;
+    text-align: center;
+    width: 50%;
+    height: 60px;
+    line-height: 52px;
+    margin: 0 auto;
+    font-size: 1.6em;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+.genbtn:hover,
+#tweet:hover,
+#gotowiki:hover {
+    background: rgba(128, 29, 21, 0.5);
+    border: 3px solid #f3f3f3;
+    cursor: pointer;
+}
+
+.genbtn:active {
+    background: #334431;
+}
+
+.loader {
+    border: 8px solid rgba(243, 243, 243, 1);
+    /* Light grey */
+    border-top: 8px solid rgba(243, 243, 243, 0);
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 6px auto;
+}
+
+.wiki {
+    font-family: 'Sintony', sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    margin-bottom: 70px;
+}
+
+.colLeft {
+    /* background: #334431; */
+    margin: 0;
+    /* height: 100vh; */
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.colRight {
+    /* background: #ff533d; */
+    margin: 0;
+    /* height: 100vh !important; */
+}
+
+.row {}
+
+.padding-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.no-gutter>[class*='col-'] {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.btngroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 1400px) {
+    .quote {
+        font-family: 'EB Garamond', serif;
+        font-size: 3em;
+        margin-bottom: 10px;
+        line-height: 1.45;
+        width: 100%;
+        min-height: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    body {
+        background: #ff533d;
+    }
+    .colLeft {
+        background: #334431;
+        /* height: 100%; */
+        padding-bottom: 50px;
+    }
+    .colRight {
+        background: #ff533d;
+        /* max-height: 50vh; */
+    }
+    .title {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        margin-top: 0px;
+        font-size: 2.5em;
+    }
+    .quotes {
+        margin-top: 0vh;
+        padding: 50px;
+    }
+    .categ {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5em;
+        margin-top: 60px;
+    }
+    .quote {
+        font-family: 'EB Garamond', serif;
+        font-size: 2em;
+        margin-bottom: 10px;
+        line-height: 1.45;
+        width: 100%;
+        min-height: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .auth {
+        font-family: 'Rock Salt', cursive;
+        font-size: 1.4em;
+        text-align: right;
+        margin-bottom: 0px;
+    }
+    .about {
+        margin-top: 0;
+        padding: 50px;
+        margin-bottom: 0px;
+    }
+    .genbtn:active {
+        background: rgba(239, 239, 239, 0.1);
+    }
+    .loader {
+        border: 8px solid rgba(243, 243, 243, 1);
+        /* Light grey */
+        border-top: 8px solid rgba(243, 243, 243, 0);
+        /* Blue */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 2s linear infinite;
+        margin: 6px auto;
+    }
+    .wiki {
+        font-family: 'Sintony', sans-serif;
+        font-size: 1.3em;
+        text-align: justify;
+        margin-bottom: 0px;
+    }
+    .genbtn,
+    #tweet,
+    #gotowiki {
+        width: 40vw;
+    }
+    .genbtn:hover,
+    #tweet:hover,
+    #gotowiki:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .genbtn:active,
+    #tweet:active,
+    #gotowiki:active {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
